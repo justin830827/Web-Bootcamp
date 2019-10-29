@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+</head>
+<!-- form tags:
+    action : where the form send data to
+    method : what HTTP method to send
+-->
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" placeholder="John" required >
+        <label for="firstname">Last Name:</label>
+        <input id="lasttname" type="text" placeholder="Cena" required>
+        <div>
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="Sex" value="male">
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="Sex" value="female">
+        <label for="other">Other</label>
+        <input id="other" type="radio" name ="Sex" value="other">
+        </div>
+        <label for="email">Email</label>
+        <input type="email" name="your email" id="email" placeholder="you email" required>
+        <label for="password">Password</label>
+        <input type="password" name="your password" id="password" placeholder="your password" required>
+        <div>
+            <label for="birthday">Birthday:
+            <select name="Month" id="birthday" placeholder="Month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            
+            </select>
+            </label>
+        </div>
+        <div>
+            <label for="terms">I agree to the terms and conditions </label>
+            <input id="terms" type="checkbox">
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
